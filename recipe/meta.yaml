@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/koaning/{{ name }}/archive/refs/tags/{{ version }}.tar.gz 
-  sha256: 03911aac873d6d7fff26c2f98cb6754d11c5936ffa0dc969d2b07549bde891b7
+  sha256: 980aeaf71cb3c1ca0feafa5e1168b43356684d4202a4ec14cad6005647598f3f
   # patches:
   #   - 0001-remove-long-desc.patch
 
