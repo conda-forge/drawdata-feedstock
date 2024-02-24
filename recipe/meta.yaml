@@ -1,5 +1,5 @@
 {% set name = "drawdata" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 08d14473e9db04f2d4ae2baf153259271cdd42af17c08c6f6424a9c88f54bd87
+  sha256: 03911aac873d6d7fff26c2f98cb6754d11c5936ffa0dc969d2b07549bde891b7
   patches:
     - 0001-remove-long-desc.patch
 
