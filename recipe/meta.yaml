@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/koaning/{{ name }}/archive/refs/tags/{{ version }}.tar.gz 
   sha256: 03911aac873d6d7fff26c2f98cb6754d11c5936ffa0dc969d2b07549bde891b7
   # patches:
   #   - 0001-remove-long-desc.patch
