@@ -1,5 +1,5 @@
 {% set name = "drawdata" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/koaning/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: a2d62fb3254e4194e97d4687d904c35a1eebf8faf9966641cc4f479fa2a222ae
+  sha256: 626599dabc0c3f5a2d3cec94aaf59cec403888e4737d27717c188261d235dec0
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
