@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: drawdata
-  version: 0.3.4
+  version: "0.5.2"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://github.com/koaning/${{ name }}/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 626599dabc0c3f5a2d3cec94aaf59cec403888e4737d27717c188261d235dec0
+  url: https://github.com/koaning/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
+  sha256: 1f2f22dc3f927e8db6e4602447d01fa580a988c8daeae88cf7a0537f89d9343c
 
 build:
   number: 0
@@ -31,7 +31,9 @@ tests:
       imports:
         - drawdata
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Draw a dataset in a jupyter notebook.
