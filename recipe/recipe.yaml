@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: drawdata
-  version: "0.5.2"
+  version: "0.5.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/koaning/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 1f2f22dc3f927e8db6e4602447d01fa580a988c8daeae88cf7a0537f89d9343c
+  sha256: f82c53a8ddb49d0e9808f33f6e57f734c23c03b5db4e4feebaa524969b3489ee
 
 build:
   number: 0
